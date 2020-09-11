@@ -1,7 +1,7 @@
 import React from "react";
 import {
 	ProjectContainer,
-	LinkButton,
+	Button,
 	ImageContainer,
 	ProjectDescription,
 } from "../styles/components/ProjectStyle";
@@ -61,9 +61,15 @@ const Projects = () => {
 				<img src={story3} alt="project3" />
 				<img src={story4} alt="project4" />
 			</ImageContainer>
-			<LinkButton to="/projects">
-				<span> Find out more </span>
-			</LinkButton>
+			<Button>
+				<a
+					href="https://github.com/savip"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<span> Explore projects </span>
+				</a>
+			</Button>
 		</ProjectContainer>
 	);
 };

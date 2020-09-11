@@ -10,6 +10,7 @@ import {
 	LinkButton,
 	Constellation,
 } from "../styles/components/HomeStyle";
+import SocialMedia from "../components/contact/SocialMedia";
 
 const Home = () => {
 	return (
@@ -57,6 +58,7 @@ const Home = () => {
 			<About />
 			<Projects />
 			<Contact />
+			<SocialMedia />
 		</>
 	);
 };

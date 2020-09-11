@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import infoBackground from "../../images/infoBackground.svg";
-import { setColor, Button } from "../../styles";
+import { setColor, setFont } from "../../styles";
 
 export const ProjectContainer = styled.div`
 	display: grid;
@@ -21,6 +21,7 @@ export const ProjectContainer = styled.div`
 		font-size: 3.4em;
 		color: #fff;
 		position: relative;
+		padding: 5px 0;
 
 		&:after {
 			content: " ";
@@ -29,18 +30,42 @@ export const ProjectContainer = styled.div`
 			position: absolute;
 			left: 0;
 			bottom: 0;
-			background: ${setColor.redColor};
+			background: #fff;
 			margin-left: 0.5em;
 		}
 	}
 `;
 
-export const LinkButton = styled(Button)`
-	align-self: start;
-	grid-column: 8/10;
+export const Button = styled.button`
 	grid-row: 3/4;
+	grid-column: 8/10;
+
+	padding: 0.3em;
+	text-align: center;
+	height: 5vh;
+	width: 20vh;
+	background: transparent;
+
+	border: 2px solid white;
+	font-size: 2em;
+
 	span {
 		color: #fff;
+		font-family: ${setFont.slanted};
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+
+	&:hover {
+		background: ${setColor.redColor};
+
+		span {
+			padding-right: 0.5em;
+			transition: all 0.2s ease-in-out;
+			color: #fff;
+		}
 	}
 `;
 
@@ -62,7 +87,7 @@ export const ProjectDescription = styled.div`
 	line-height: 3em;
 	grid-column: 1/4;
 	grid-row: 2/5;
-	margin-top: 2em;
+	margin-top: 5em;
 
 	margin-left: 2em;
 	h2 {

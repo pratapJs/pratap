@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import circlePhoto from "../../images/circlephoto.png";
-import { setFont, setColor, Button } from "../../styles";
+import { setFont, setColor } from "../../styles";
 import BarChart from "../../components/barchart/BarChart";
 
 const Profile = () => {
@@ -17,29 +17,52 @@ const Profile = () => {
 				<br />I am passionate about creating intuitive, dynamic websites and
 				mobile applications.
 			</p>
-			<LinkButton to="/about">
-				<span> My Resume </span>
-			</LinkButton>
+
+			<Button>
+				<a
+					href="https://github.com/savip"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<span> My Resume </span>
+				</a>
+			</Button>
 		</ProfileDiv>
 	);
 };
 
 export default Profile;
 
-const LinkButton = styled(Button)`
+const Button = styled.button`
 	grid-row: 3/4;
 	justify-self: start;
-	border-color: ${setColor.redColor};
 
-	&:hover {
-		border-color: #fff;
-		span {
-			color: #fff;
-		}
-	}
+	padding: 0.3em;
+	text-align: center;
+	height: 5vh;
+	width: 15vh;
+	background: transparent;
+
+	border: 2px solid ${setColor.greenColor};
+	font-size: 2em;
 
 	span {
-		color: #000;
+		color: ${setColor.greenColor};
+		font-family: ${setFont.slanted};
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+
+	&:hover {
+		background: ${setColor.redColor};
+
+		span {
+			padding-right: 0.5em;
+			transition: all 0.2s ease-in-out;
+			color: #fff;
+		}
 	}
 `;
 

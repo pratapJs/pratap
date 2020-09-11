@@ -17,6 +17,7 @@ export const AboutContainer = styled.div`
 	.about {
 		justify-self: center;
 		align-self: center;
+		color: ${setColor.greenColor};
 		font-size: 2em;
 		position: relative;
 
@@ -27,7 +28,7 @@ export const AboutContainer = styled.div`
 			position: absolute;
 			left: 0;
 			bottom: 0;
-			background: ${setColor.redColor};
+			background: ${setColor.greenColor};
 			margin-left: 1em;
 		}
 	}
