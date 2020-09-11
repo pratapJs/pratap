@@ -6,6 +6,7 @@ import { setColor } from "../../styles";
 const MyMobileNavBar = styled.nav`
 	width: 15vw;
 	background: ${setColor.secondaryColor};
+
 	box-shadow: -8px 2px red;
 	align-self: flex-end;
 	transition: transform 600ms ease;
@@ -19,6 +20,7 @@ const MyMobileNavBar = styled.nav`
 		list-style: none;
 		margin-left: 2em;
 		height: 25vh;
+
 		@media screen and (max-width: 480px) {
 			font-size: 80%;
 		}

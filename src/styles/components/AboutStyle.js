@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import repeatingBackground from "../../images/repeatingBackground.svg";
 import { setColor } from "../../styles";
 
 export const AboutContainer = styled.div`
@@ -7,8 +7,12 @@ export const AboutContainer = styled.div`
 	grid-column: full-start/full-end;
 
 	color: #000;
-
+	background-image: url(${repeatingBackground});
 	margin-left: 2em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
 
 	.about {
 		justify-self: center;

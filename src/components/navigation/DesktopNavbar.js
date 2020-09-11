@@ -39,7 +39,7 @@ const MyDesktopNavbar = styled.nav`
 	}
 `;
 
-const MyMobileNavButton = styled.button`
+/* const MyMobileNavButton = styled.button`
 	background: transparent;
 	border: none;
 	height: 6vh;
@@ -52,7 +52,7 @@ const MyMobileNavButton = styled.button`
 	@media screen and (max-width: 768px) {
 		display: block;
 	}
-`;
+`; */
 
 const DesktopNavbar = () => {
 	return (

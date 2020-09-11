@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import mobileIcon from "../../images/mobileIcon.svg";
 import websiteIcon from "../../images/websiteIcon.svg";
-import { setFont, setColor } from "../../styles";
 
 const Features = () => {
 	return (
