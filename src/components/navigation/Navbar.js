@@ -27,7 +27,10 @@ const Navbar = () => {
 	return (
 		<MainNavigation>
 			<DesktopNavbar toggleMobileNavbar={toggleMobileNavbar} />
-			<MobileNavbar displayMobileNavBar={displayMobileNavBar} />
+			<MobileNavbar
+				displayMobileNavBar={displayMobileNavBar}
+				toggleMobileNavbar={toggleMobileNavbar}
+			/>
 		</MainNavigation>
 	);
 };
@@ -45,7 +48,8 @@ const MainNavigation = styled.nav`
 	z-index: 13;
 
 	${media.tablet` 
-	position:static;
+position:static;
+	
 	
 	
 

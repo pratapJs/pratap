@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { setColor, setBorder, media } from "../../styles";
+import { setColor, setBorder } from "../../styles";
 
 export const mainButton = styled.button`
 	display: inline-block;

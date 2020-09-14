@@ -38,7 +38,7 @@ body {
 	
 	`}
 	${media.mobileL`
-	font-size:3.5rem;
+	font-size:3rem;
 	
 	`}
 	
@@ -53,11 +53,11 @@ body {
 		font-weight:300;
 		font-size:4rem;
 		${media.tablet`
-	font-size:3.5rem;
+	font-size:3.8rem;
 	
 	`}
 	${media.mobileL`
-	font-size:3rem;
+	font-size:3.5rem;
 	
 	`}
 		
@@ -70,7 +70,7 @@ h3{
 
 	font-size:3rem;
 	${media.tablet`
-	font-size:2.5rem;
+	font-size:2.8rem;
 	
 	`}
 	
@@ -114,7 +114,7 @@ p{
 
 	.container {
     display: grid;
-    grid-template-rows:100vh  repeat(4, min-content);
+     /* grid-template-rows: 100vh min-content repeat(3, 100vh);  */
 	grid-template-columns: [full-start] 1fr [center-start] repeat(8,[col-start] minmax(min-content, 14rem) [col-end])[center-end] 1fr[full-end];
 	
 

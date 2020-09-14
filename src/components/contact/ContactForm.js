@@ -51,15 +51,18 @@ const ContactForm = () => {
 export default ContactForm;
 
 const FormContainer = styled.div`
-	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	/* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
 	display: grid;
-	justify-self: center;
+
+	margin-top: 10rem;
+	justify-content: center;
 
 	input {
 		width: 40rem;
-		height: 4rem;
+		height: 4.5rem;
 		color: #000;
-		margin: 0.6rem;
+		margin: 0.8rem;
+
 		${media.mobileM`
 			width:30rem; 
 			
@@ -69,28 +72,23 @@ const FormContainer = styled.div`
 	}
 
 	p {
-		font-size: 2em;
-		margin-bottom: 2rem;
-		margin-left: 4rem;
-		${media.mobileM`
-		margin-left: 0;
-			
-			
-	
-	`}
+		margin-bottom: 4rem;
+		color: ${setColor.greenLightColor};
+		justify-self: center;
 	}
 `;
 
 const Button = styled.button`
 	padding: 0.3em;
 	text-align: center;
-	height: 4rem;
-	width: 12rem;
-	background: transparent;
-	font-size: 2rem;
-	border: 2px solid white;
 
-	margin: 2rem 12rem;
+	height: 5rem;
+	width: 16rem;
+	background: transparent;
+	font-size: 2.5rem;
+	border: 2px solid white;
+	justify-self: center;
+	margin: 4rem 0;
 	cursor: pointer;
 
 	span {

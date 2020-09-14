@@ -27,9 +27,9 @@ const AboutContainer = styled.div`
 	margin: 2rem;
 	color: #333;
 	background-image: url(${repeatingBackground});
-
+	background-attachment: fixed;
 	/* grid-auto-rows: min-content; */
 
-	background-size: cover;
+	/* background-size: cover; */
 	background-repeat: no-repeat;
 `;

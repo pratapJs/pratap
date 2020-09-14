@@ -5,9 +5,13 @@ import { setColor } from "../../styles";
 
 const MobileNavbar = (props) => {
 	console.log(props);
+
 	return (
 		<MyMobileNavBar displayMobileNavBar={props.displayMobileNavBar}>
-			<NavLinks isMobileLink={true} />
+			<NavLinks
+				isMobileLink={true}
+				toggleMobileNavbar={props.toggleMobileNavbar}
+			/>
 		</MyMobileNavBar>
 	);
 };
@@ -44,7 +48,8 @@ const MyMobileNavBar = styled.nav`
 		margin-left: 2rem;
 		font-size: 2.2rem;
 		&:hover,
-		&:active {
+		&:active,
+		&.active {
 			color: ${setColor.redColor};
 		}
 	}

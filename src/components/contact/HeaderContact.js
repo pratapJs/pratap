@@ -20,7 +20,7 @@ const HeaderStyle = styled.div`
 		position: relative;
 		font-family: ${setFont.slanted};
 
-		margin-top: 0.5em;
+		margin-top: 5rem;
 
 		&:after {
 			content: " ";

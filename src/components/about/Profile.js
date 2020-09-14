@@ -6,29 +6,29 @@ import Bar from "../../components/about/Bar";
 const Profile = () => {
 	return (
 		<ProfileDiv>
-			<div>
+			<div className="profiledesc">
 				<img src={Photo} alt="my Profile" className="image" />
-				<div className="profiledesc">
-					<h4>Pratap Adhikari</h4>
 
-					<p>
-						{" "}
-						I'm a Front-End Developer from Darwin, Australia.
-						<br />I focus on creating intuitive, dynamic user experiences.
-					</p>
+				<h4>Pratap Adhikari</h4>
 
-					<Button>
-						<a
-							href="https://github.com/savip"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<span> My Resume </span>
-						</a>
-					</Button>
-				</div>
+				<p>
+					{" "}
+					I'm a Front-End Developer from Darwin, Australia.
+					<br />I focus on creating intuitive, dynamic user experiences.
+				</p>
+
+				<Button>
+					<a
+						href="https://github.com/savip"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<span> My Resume </span>
+					</a>
+				</Button>
 			</div>
-			<div>
+
+			<div className="bar">
 				<Bar />
 			</div>
 		</ProfileDiv>
@@ -40,12 +40,8 @@ export default Profile;
 const ProfileDiv = styled.section`
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
-	margin-left: 4rem;
 
-	${media.mobileL`
-margin-left:0.1rem;
-	
-	`}
+	grid-gap: 5rem;
 
 	p {
 		font-family: ${setFont.slanted};
@@ -54,10 +50,15 @@ margin-left:0.1rem;
 	}
 	h4 {
 		margin-left: 5rem;
+		margin-top: 2rem;
 	}
 
 	.profiledesc {
-		display: grid;
+		justify-self: center;
+	}
+
+	.bar {
+		justify-self: center;
 	}
 `;
 const Button = styled.button`
@@ -65,17 +66,13 @@ const Button = styled.button`
 	padding: 0.3em;
 	text-align: center;
 	height: 5rem;
-	width: 14rem;
+	width: 15rem;
 	background: transparent;
 	margin-top: 2rem;
-	border: 2px solid ${setColor.greenColor};
-	font-size: 2rem;
-	${media.tablet`
-	height: 4rem;
-	width: 12rem;
-	
-	
-	`} span {
+	border: 2px solid ${setColor.redColor};
+	font-size: 2.2rem;
+
+	span {
 		color: ${setColor.greenColor};
 		font-family: ${setFont.slanted};
 	}
@@ -89,6 +86,7 @@ const Button = styled.button`
 		color: white;
 		padding-right: 0.5em;
 		transition: all 0.2s ease-in-out;
+		border-color: ${setColor.greenColor};
 
 		span {
 			/* 	padding-right: 0.5em;

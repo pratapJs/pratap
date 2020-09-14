@@ -39,16 +39,20 @@ const ProjectImage = () => {
 export default ProjectImage;
 
 const ImageContainer = styled.div`
-	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-
-	margin-left: 2em;
-	grid-column-gap: 1em;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	display: flex;
+	margin-left: 2rem;
+	flex-direction: columns;
+	flex-wrap: wrap;
+	${media.tablet`
+justify-content:center;
+	
+	`}
 
 	img {
-		width: 40rem;
+		width: 42rem;
 		height: 30rem;
-		margin-bottom: 2em;
-		margin-left: 2em;
+		margin: 2rem;
 
 		${media.mobileM`
 width:30rem;

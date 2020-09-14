@@ -9,15 +9,16 @@ export const HeaderContainer = styled.div`
 
 	display: grid;
 
-	/* grid-template-areas: "overlap"; */
+	grid-template-rows: 95vh;
+	grid-template-areas: "overlap";
 	grid-row-gap: 2rem;
-	justify-content: center;
-	align-content: center;
 
 	.homeText {
-		/* grid-area: overlap; */
+		grid-area: overlap;
+		display: grid;
 		margin-left: 2rem;
-
+		align-self: center;
+		justify-self: center;
 		${fadeIn("-40em", "5em", 0)}
 	}
 
@@ -26,20 +27,10 @@ export const HeaderContainer = styled.div`
 	}
 `;
 
-/* export const Constellation = styled.div`
-	grid-area: overlap;
-`; */
 export const LinkButton = styled(mainButton)`
-	margin-top: 1rem;
-	justify-self: center;
-
 	${fadeIn("40em", "-5em", 0)} /* z-index: 1; */
-
-
-	${media.tablet` 
-	font-size: 2rem;
-	
-
-
-`}
+	height:5rem;
+	width: 20rem;
+	justify-self: center;
+	margin-top: 3rem;
 `;

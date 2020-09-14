@@ -26,7 +26,7 @@ const ProjectDesc = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<span> More projects </span>
+						<span> Check my projects </span>
 					</a>
 				</Button>
 			</div>
@@ -38,7 +38,7 @@ export default ProjectDesc;
 
 const ProjectDescription = styled.div`
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 	line-height: 3em;
 	margin-left: 5rem;
 
@@ -59,7 +59,7 @@ const Button = styled.button`
 	padding: 0.3em;
 	text-align: center;
 	height: 5rem;
-	width: 16rem;
+	width: 20rem;
 	background: transparent;
 
 	border: 2px solid white;

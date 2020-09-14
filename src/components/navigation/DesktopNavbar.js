@@ -43,7 +43,8 @@ const NavbarContainer = styled.nav`
 		text-decoration: none;
 		font-size: 2.5rem;
 		&:hover,
-		&:active {
+		&:active,
+		&.active {
 			color: ${setColor.redColor};
 		}
 	}

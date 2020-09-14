@@ -3,7 +3,7 @@ import styled from "styled-components";
 import facebook from "../../images/facebook.svg";
 import instagram from "../../images/instagram.svg";
 import twitter from "../../images/twitter.svg";
-import { setColor, setFont } from "../../styles";
+import { setColor, setFont, media } from "../../styles";
 const SocialMedia = () => {
 	return (
 		<SocialContainer>
@@ -17,7 +17,7 @@ const SocialMedia = () => {
 				</a>
 
 				<a
-					href="https://www.facebook.com/adhi.pratap"
+					href="https://www.instagram.com/adhi.pratap/?hl=en"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
@@ -25,7 +25,7 @@ const SocialMedia = () => {
 				</a>
 
 				<a
-					href="https://www.facebook.com/adhi.pratap"
+					href="https://twitter.com/home"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
@@ -33,7 +33,10 @@ const SocialMedia = () => {
 				</a>
 			</div>
 			<div>
-				<p> PRATAP ADHIKARI &copy; 2020</p>
+				<p>
+					{" "}
+					PRATAP ADHIKARI <span> &copy; 2020 </span>
+				</p>
 			</div>
 		</SocialContainer>
 	);
@@ -42,23 +45,35 @@ const SocialMedia = () => {
 export default SocialMedia;
 const SocialContainer = styled.div`
 	background-color: ${setColor.secondaryColor};
-	grid-column: full-start/full-end;
-	grid-row: 6/7;
+	margin-top: 10rem;
 	display: grid;
 	justify-content: center;
 
 	img {
-		height: 4em;
-		width: 4em;
-		margin-bottom: 3em;
+		height: 5rem;
+		width: 5rem;
+		margin-bottom: 4rem;
 		justify-self: center;
-		margin-left: 5em;
-		margin-top: 3em;
+		margin-left: 6rem;
+		margin-top: 6rem;
+		${media.mobileM`
+		margin-left: 3rem;
+			
+			
+	
+	`}
 	}
 	p {
-		margin-left: 10em;
+		margin-left: 10rem;
 		font-family: ${setFont.main};
-		font-size: 1em;
-		margin-bottom: 1em;
+		font-size: 1.5rem;
+		margin: 3rem 8rem;
+		${media.mobileM`
+		margin-left: 3rem; `}
+
+		color: ${setColor.greenColor};
+		span {
+			color: ${setColor.redColor};
+		}
 	}
 `;
