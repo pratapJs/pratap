@@ -1,68 +1,62 @@
 import React from "react";
 import styled from "styled-components";
-import NavLink from "./NavLink";
-import { setColor } from "../../styles";
-//import iconmenu from "../../images/menuicon.svg";
+import NavLinks from "./Navlinks";
+import { setColor, media } from "../../styles";
+import { GoGrabber } from "react-icons/go";
+const DesktopNavbar = (props) => {
+	return (
+		<NavbarContainer>
+			<LinkButton onClick={props.toggleMobileNavbar}>
+				<GoGrabber size={70} />
+			</LinkButton>
+			<NavLinks />
+		</NavbarContainer>
+	);
+};
 
-const MyDesktopNavbar = styled.nav`
-	display: grid;
+export default DesktopNavbar;
 
-	background: ${setColor.secondaryColor};
-
-	height: 8vh;
-	font-size: 1em;
-	box-shadow: 0 2px ${setColor.redColor};
-
-	align-content: center;
-	text-decoration: none;
+const NavbarContainer = styled.nav`
+	background-color: ${setColor.secondaryColor};
+	display: flex;
+	border-bottom: 2px solid ${setColor.borderColor};
+	flex-flow: row nowrap;
+	justify-content: start;
+	position: relative;
+	height: 7em;
+	color: white;
 
 	.nav-links {
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 		list-style: none;
-		width: 35vw;
-		margin-left: 1em;
-
-		@media screen and (max-width: 768px) {
-			display: none;
-		}
+		width: 50rem;
+		${media.tablet` 
+	display:none;
+	`}
 	}
+
 	.link {
-		color: #fff;
-		font-size: 2.5vh;
+		color: white;
 		text-decoration: none;
-		&:hover {
+		font-size: 2.5rem;
+		&:hover,
+		&:active {
 			color: ${setColor.redColor};
 		}
 	}
 `;
 
-/* const MyMobileNavButton = styled.button`
+const LinkButton = styled.button`
 	background: transparent;
+	align-self: center;
 	border: none;
-	height: 6vh;
-	width: 6vh;
-	color: #fff;
+	color: white;
 	display: none;
 
-	margin-left: 1em;
-
-	@media screen and (max-width: 768px) {
-		display: block;
-	}
-`; */
-
-const DesktopNavbar = () => {
-	return (
-		<MyDesktopNavbar>
-			<NavLink />
-			{/* <MyMobileNavButton>
-				<img src={iconmenu} alt="menu icon" />{" "}
-			</MyMobileNavButton> */}
-		</MyDesktopNavbar>
-	);
-};
-
-export default DesktopNavbar;
+	${media.tablet` 
+	display:block;
+	`}
+`;

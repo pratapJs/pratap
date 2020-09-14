@@ -1,21 +1,35 @@
 import React from "react";
-import { AboutContainer } from "../styles/components/AboutStyle";
 
+import styled from "styled-components";
+import repeatingBackground from "../images/repeatingBackground.svg";
 import Profile from "../components/about/Profile";
+import Header from "../components/about/Header";
 import Features from "../components/about/Features";
 
 const About = () => {
 	return (
 		<AboutContainer>
-			<div className="about">
-				<h1> About</h1>
-			</div>
+			<Header />
 
 			<Profile />
-
 			<Features />
 		</AboutContainer>
 	);
 };
 
 export default About;
+
+const AboutContainer = styled.div`
+	display: grid;
+	grid-column: full-start/full-end;
+
+	grid-gap: 5rem;
+	margin: 2rem;
+	color: #333;
+	background-image: url(${repeatingBackground});
+
+	/* grid-auto-rows: min-content; */
+
+	background-size: cover;
+	background-repeat: no-repeat;
+`;

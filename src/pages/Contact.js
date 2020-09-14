@@ -1,17 +1,14 @@
 import React from "react";
 import ContactForm from "../components/contact/ContactForm";
-
-import { ContactContainer } from "../styles/components/ContactStyle";
+import HeaderContact from "../components/contact/HeaderContact";
+import { setColor } from "../styles";
+import styled from "styled-components";
 
 const Contact = () => {
 	return (
 		<>
 			<ContactContainer>
-				<div>
-					{" "}
-					<h1>Contact</h1>{" "}
-				</div>
-
+				<HeaderContact />
 				<ContactForm />
 			</ContactContainer>
 		</>
@@ -19,3 +16,12 @@ const Contact = () => {
 };
 
 export default Contact;
+
+const ContactContainer = styled.div`
+	background-color: ${setColor.primaryColor};
+	grid-gap: 5rem;
+	display: grid;
+	grid-column: full-start/full-end;
+
+	/* clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%); */
+`;

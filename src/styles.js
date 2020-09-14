@@ -1,17 +1,33 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { keyframes, css } from "styled-components";
+
+const sizes = {
+	mobileS: 320,
+	mobileM: 480,
+	mobileL: 576,
+	tablet: 768,
+	laptop: 1024,
+	laptopL: 1440,
+	desktop: 2560,
+};
+// Iterate through the sizes and create a media template
+export const media = Object.keys(sizes).reduce((acc, label) => {
+	acc[label] = (...args) => css`
+		@media (max-width: ${sizes[label] / 16}em) {
+			${css(...args)}
+		}
+	`;
+	return acc;
+}, {});
 
 export const setColor = {
 	primaryColor: "#252934",
-	primaryColorLight: "#5F5F5F",
-
+	primaryColorLight: "#333",
 	secondaryColor: "#1B242F ",
-	secondaryColorLight: "#1E242C",
 
 	redColor: "#FA1F79",
 	greenColor: "#0F929B",
-	blueColor: "#195C92",
-	whiteColor: "#fff",
+	borderColor: "#04c2c9",
+	greenLightColor: "#76d7de",
 };
 
 export const setFont = {
@@ -27,19 +43,40 @@ export const setGrid = ({ x, y }) => {
 	return `display:grid; align-items:${x}; justify-content:${y}`;
 };
 
-export const Button = styled(Link)`
-	text-decoration: none;
-	padding: 0.3em;
-	text-align: center;
-	height: 5vh;
-	width: 20vh;
-	background: transparent;
-	color: white;
-	border: 2px solid white;
-	font-size: 2.5em;
-	&:hover {
-		padding-right: 1em;
-		transition: all 0.2s ease-in-out;
-		background: ${setColor.redColor};
+export const setBorder = ({ width = "2px", style = "solid" }) => {
+	return `border:${width} ${style} `;
+};
+
+export const fadeIn = (start, mid, end) => {
+	const animation = keyframes`
+	0% {
+		opacity: 0;
+		transform: translateX(${start});
 	}
+
+	50% {
+
+		opacity:0.5;
+		transform:translateX(${mid});
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(${end});
+	
+}
+
+
 `;
+
+	return css`
+		animation: ${animation} 3s ease-in-out;
+	`;
+};
+
+export const setTransition = ({
+	property = "all",
+	time = "0.2s",
+	timing = "ease-in-out",
+} = {}) => {
+	return `transition:${property} ${time} ${timing}`;
+};

@@ -1,43 +1,51 @@
 import React from "react";
+import NavLinks from "./Navlinks";
 import styled from "styled-components";
-import NavLink from "./NavLink";
 import { setColor } from "../../styles";
 
-const MyMobileNavBar = styled.nav`
-	width: 15vw;
-	background: ${setColor.secondaryColor};
-
-	box-shadow: -8px 2px red;
-	align-self: flex-end;
-	transition: transform 600ms ease;
-	transform: translateX(calc(100%+15px));
-
-	.nav-links {
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-evenly;
-		align-self: flex-start;
-		list-style: none;
-		margin-left: 2em;
-		height: 25vh;
-
-		@media screen and (max-width: 480px) {
-			font-size: 80%;
-		}
-	}
-	.link {
-		color: #fff;
-		font-size: 2em;
-		text-decoration: none;
-	}
-`;
-
-const MobileNavbar = () => {
+const MobileNavbar = (props) => {
+	console.log(props);
 	return (
-		<MyMobileNavBar>
-			<NavLink />{" "}
+		<MyMobileNavBar displayMobileNavBar={props.displayMobileNavBar}>
+			<NavLinks isMobileLink={true} />
 		</MyMobileNavBar>
 	);
 };
 
 export default MobileNavbar;
+
+const MyMobileNavBar = styled.nav`
+	/* clip-path: polygon(100% 0%, 100% 0%, 0 100%, 0 0); */
+	background-color: ${setColor.primaryColor};
+
+	display: none;
+	display: ${(props) => props.displayMobileNavBar && "block"};
+
+	overflow: hidden;
+	position: absolute;
+	margin-top: 6.8rem;
+	width: 100%;
+	max-height: 50rem;
+	transition: transform max-height 5s;
+
+	transform: translateY(0, 50%);
+
+	.nav-links {
+		display: flex;
+		flex-flow: column nowrap;
+		line-height: 4rem;
+		align-items: flex-start;
+		list-style: none;
+	}
+
+	.link {
+		color: white;
+		text-decoration: none;
+		margin-left: 2rem;
+		font-size: 2.2rem;
+		&:hover,
+		&:active {
+			color: ${setColor.redColor};
+		}
+	}
+`;

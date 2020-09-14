@@ -1,58 +1,54 @@
 import React from "react";
 import styled from "styled-components";
-
+import { setColor } from "../../styles";
 import mobileIcon from "../../images/mobileIcon.svg";
 import websiteIcon from "../../images/websiteIcon.svg";
 
 const Features = () => {
 	return (
 		<FeatureStyled>
-			<article className="website">
+			<div>
 				<img src={websiteIcon} alt="website" />
-				<h2>Website Development</h2>
-				<h3> Reach More. Discover More.</h3>
+				<h4>Website Development</h4>
+				<h5> Reach More. Discover More.</h5>
 				<p>Optimized for Search Engines, built for speed</p>
-			</article>
-
-			<article className="mobileapps">
+			</div>
+			<div>
 				<img src={mobileIcon} alt="mobile-icon" />
-				<h2> IOS/Android app Development</h2>
-				<h3>Extend Functionality. Extend Acess. Increase Engagement.</h3>
-				<p>
-					Integrate your web experience or create a standalone app with either
-					mobile platform
-				</p>
-			</article>
+				<h4> IOS/Android app Development</h4>
+				<h5>Extend Functionality. Increase Engagement.</h5>
+				<p>Create a standalone app with either mobile platform</p>
+			</div>
 		</FeatureStyled>
 	);
 };
 
-export default Features;
-
 const FeatureStyled = styled.section`
+	margin: 3rem 5rem;
 	display: grid;
-	margin-top: 5em;
+	grid-gap: 5rem;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 
 	img {
 		width: 22em;
 		height: 22em;
+		margin-bottom: 2rem;
 	}
 
-	h2 {
-		margin-top: 1em;
-		font-size: 2.1em;
+	h4 {
+		color: ${setColor.primaryColorLight};
 	}
-	h3 {
-		font-size: 1.8em;
-	}
+
 	p {
-		font-size: 1.8em;
+		color: ${setColor.primaryColorLight};
 	}
 
-	.mobileapps {
-		grid-column: 9/12;
-	}
 	.website {
-		grid-column: 5/8;
+		margin-bottom: 4rem;
+		margin-left: 5rem;
+	}
+
+	.mobile {
 	}
 `;
+export default Features;

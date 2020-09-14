@@ -6,7 +6,7 @@ import twitter from "../../images/twitter.svg";
 import { setColor, setFont } from "../../styles";
 const SocialMedia = () => {
 	return (
-		<ImageContainer>
+		<SocialContainer>
 			<div>
 				<a
 					href="https://www.facebook.com/adhi.pratap"
@@ -35,27 +35,30 @@ const SocialMedia = () => {
 			<div>
 				<p> PRATAP ADHIKARI &copy; 2020</p>
 			</div>
-		</ImageContainer>
+		</SocialContainer>
 	);
 };
 
 export default SocialMedia;
-const ImageContainer = styled.div`
+const SocialContainer = styled.div`
 	background-color: ${setColor.secondaryColor};
 	grid-column: full-start/full-end;
+	grid-row: 6/7;
 	display: grid;
 	justify-content: center;
 
 	img {
 		height: 4em;
 		width: 4em;
-		margin-bottom: 2em;
+		margin-bottom: 3em;
 		justify-self: center;
 		margin-left: 5em;
+		margin-top: 3em;
 	}
 	p {
 		margin-left: 10em;
 		font-family: ${setFont.main};
 		font-size: 1em;
+		margin-bottom: 1em;
 	}
 `;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { setColor, setFont } from "../../styles";
+import { setColor, setFont, media } from "../../styles";
 
 const ContactForm = () => {
 	const [name, setName] = useState(" ");
@@ -13,79 +13,84 @@ const ContactForm = () => {
 	};
 
 	return (
-		<>
-			<FormContainer>
-				<p> Have a question or want to work together?</p>
-				<form>
-					<div>
-						<input
-							type="text"
-							placeholder="Name"
-							value={name}
-							onChange={(e) => setName(e.target.value)}
-						/>
-					</div>
-					<div>
-						<input
-							type="email"
-							placeholder="Enter email"
-							value={email}
-							onChange={(e) => setEmail(e.target.value)}
-						/>
-					</div>
-					<div>
-						<input
-							type="text"
-							placeholder="Your Message"
-							value={text}
-							onChange={(e) => setText(e.target.value)}
-						/>
-					</div>
-				</form>
-				<Button type="button" className="submit">
-					<span>Submit </span>
-				</Button>
-			</FormContainer>
-		</>
+		<FormContainer>
+			<p> Have a question or want to work together?</p>
+			<form>
+				<div>
+					<input
+						type="text"
+						placeholder=" Name"
+						value={name}
+						onChange={(e) => setName(e.target.value)}
+					/>
+				</div>
+				<div>
+					<input
+						type="email"
+						placeholder="Enter email"
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
+					/>
+				</div>
+				<div>
+					<input
+						type="text"
+						placeholder="Your Message"
+						value={text}
+						onChange={(e) => setText(e.target.value)}
+					/>
+				</div>
+			</form>
+			<Button type="button" className="submit">
+				<span>Submit </span>
+			</Button>
+		</FormContainer>
 	);
 };
 
 export default ContactForm;
 
 const FormContainer = styled.div`
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	display: grid;
-	justify-content: center;
+	justify-self: center;
 
-	div {
-		margin-bottom: 1em;
-		input {
-			width: 30em;
-			height: 40px;
-			color: #000;
-		}
+	input {
+		width: 40rem;
+		height: 4rem;
+		color: #000;
+		margin: 0.6rem;
+		${media.mobileM`
+			width:30rem; 
+			
+			
+	
+	`}
 	}
 
 	p {
 		font-size: 2em;
-		margin-bottom: 1em;
-		margin-top: 4em;
-		margin-left: 2em;
+		margin-bottom: 2rem;
+		margin-left: 4rem;
+		${media.mobileM`
+		margin-left: 0;
+			
+			
+	
+	`}
 	}
 `;
 
 const Button = styled.button`
 	padding: 0.3em;
 	text-align: center;
-	height: 4vh;
-	width: 12vh;
+	height: 4rem;
+	width: 12rem;
 	background: transparent;
-	grid-row: 3/4;
+	font-size: 2rem;
 	border: 2px solid white;
-	font-size: 2em;
-	justify-self: center;
-	align-self: end;
-	margin-top: 1em;
-	margin-bottom: 2em;
+
+	margin: 2rem 12rem;
 	cursor: pointer;
 
 	span {
