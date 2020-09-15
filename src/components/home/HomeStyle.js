@@ -1,7 +1,6 @@
 import styled from "styled-components";
-
-import { setColor, fadeIn } from "../../styles";
-import { mainButton } from "../../globalStyles/globals/Buttons";
+import { Link } from "react-router-dom";
+import { setColor, fadeIn, setBorder } from "../../styles";
 
 export const HeaderContainer = styled.div`
 	background: ${setColor.primaryColor};
@@ -9,7 +8,7 @@ export const HeaderContainer = styled.div`
 
 	display: grid;
 
-	grid-template-rows: 100vh;
+	grid-template-rows: 95vh;
 	grid-template-areas: "overlap";
 	grid-row-gap: 2rem;
 
@@ -27,10 +26,31 @@ export const HeaderContainer = styled.div`
 	}
 `;
 
-export const LinkButton = styled(mainButton)`
+export const LinkButton = styled(Link)`
 	${fadeIn("40em", "-5em", 0)} /* z-index: 1; */
 	height:5rem;
 	width: 20rem;
 	justify-self: center;
 	margin-top: 3rem;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	padding: 1rem;
+	text-align: center;
+
+	background: transparent;
+	color: ${(props) => (props.color ? props.color : "white")};
+	${setBorder({ width: "2px", style: "solid" })};
+	border-color: ${(props) => (props.color ? props.color : "white")};
+	font-size: 2.5rem;
+	text-transform: capitalize;
+
+	span {
+		color: #fff;
+	}
+	&:hover {
+		background-color: ${setColor.redColor};
+		padding-right: 0.5em;
+		transition: all 0.2s ease-in-out;
+	}
 `;

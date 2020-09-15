@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import Constellation from "../home/constellation";
 import { HeaderContainer, LinkButton } from "../home/HomeStyle.js";
 
@@ -14,10 +14,7 @@ const Header = () => {
 					I'm a full-stack web developer.
 				</h1>
 
-				<LinkButton as={Link} to="/projects">
-					{" "}
-					View my work
-				</LinkButton>
+				<LinkButton to="/projects"> View my work</LinkButton>
 			</div>
 		</HeaderContainer>
 	);
