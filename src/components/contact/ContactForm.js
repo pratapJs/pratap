@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { setColor, setFont, media } from "../../styles";
 
 const ContactForm = () => {
-	const [name, setName] = useState(" ");
+	/* const [name, setName] = useState(" ");
 	const [email, setEmail] = useState(" ");
 	const [text, setText] = useState(" ");
 
@@ -11,7 +11,7 @@ const ContactForm = () => {
 		e.preventDefault();
 		console.log(name, email, text);
 	};
-
+ */
 	return (
 		<FormContainer>
 			<p> Have a question or want to work together?</p>
@@ -20,24 +20,24 @@ const ContactForm = () => {
 					<input
 						type="text"
 						placeholder=" Name"
-						value={name}
-						onChange={(e) => setName(e.target.value)}
+						/* 	value={name}
+						onChange={(e) => setName(e.target.value)} */
 					/>
 				</div>
 				<div>
 					<input
 						type="email"
 						placeholder="Enter email"
-						value={email}
-						onChange={(e) => setEmail(e.target.value)}
+						/* value={email}
+						onChange={(e) => setEmail(e.target.value)} */
 					/>
 				</div>
 				<div>
 					<input
 						type="text"
 						placeholder="Your Message"
-						value={text}
-						onChange={(e) => setText(e.target.value)}
+						/* value={text}
+						onChange={(e) => setText(e.target.value)} */
 					/>
 				</div>
 			</form>
