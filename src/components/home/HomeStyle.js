@@ -26,9 +26,10 @@ export const HeaderContainer = styled.div`
 	}
 `;
 
-export const LinkButton = styled.button`
-	${fadeIn("40em", "-5em", 0)} /* z-index: 1; */
-	height:5rem;
+export const Button = styled.button`
+	${fadeIn("40em", "-5em", 0)};
+	z-index: 13;
+	height: 5rem;
 	width: 20rem;
 	justify-self: center;
 	margin-top: 3rem;

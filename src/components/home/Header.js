@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Constellation from "../home/constellation";
-import { HeaderContainer, LinkButton } from "../home/HomeStyle.js";
+import { HeaderContainer, Button } from "../home/HomeStyle.js";
 
 const Header = () => {
 	return (
@@ -14,12 +14,12 @@ const Header = () => {
 					I'm a full-stack web developer.
 				</h1>
 
-				<LinkButton>
+				<Button>
 					<Link to="/projects">
 						{" "}
 						<span>View my work </span>{" "}
 					</Link>{" "}
-				</LinkButton>
+				</Button>
 			</div>
 		</HeaderContainer>
 	);
