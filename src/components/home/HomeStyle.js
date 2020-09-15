@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+
 import { setColor, fadeIn, setBorder } from "../../styles";
 
 export const HeaderContainer = styled.div`
@@ -26,7 +26,7 @@ export const HeaderContainer = styled.div`
 	}
 `;
 
-export const LinkButton = styled(Link)`
+export const LinkButton = styled.button`
 	${fadeIn("40em", "-5em", 0)} /* z-index: 1; */
 	height:5rem;
 	width: 20rem;
@@ -34,7 +34,7 @@ export const LinkButton = styled(Link)`
 	margin-top: 3rem;
 	cursor: pointer;
 	display: inline-block;
-	text-decoration: none;
+
 	padding: 1rem;
 	text-align: center;
 
@@ -47,6 +47,11 @@ export const LinkButton = styled(Link)`
 
 	span {
 		color: #fff;
+		text-decoration: none;
+	}
+
+	a:link {
+		text-decoration: none;
 	}
 	&:hover {
 		background-color: ${setColor.redColor};
