@@ -13,7 +13,8 @@ const ContactForm = () => {
 	return (
 		<FormContainer>
 			<p> Have a question or want to work together?</p>
-			<form action="POST" data-netlify="true">
+			<form name="contact" method="post">
+				<input type="hidden" name="form-name" value="contact" />
 				<div>
 					<input
 						type="text"
@@ -40,9 +41,9 @@ const ContactForm = () => {
 						onChange={(e) => setText(e.target.value)} */
 					/>
 				</div>
-				<div>
+				{/* <div>
 					<div data-netlify-recaptcha="true"></div>
-				</div>
+				</div> */}
 			</form>
 			<Button type="button" className="submit">
 				<span>Send Message </span>
