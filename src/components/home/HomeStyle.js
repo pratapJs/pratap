@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { setColor, fadeIn, setBorder } from "../../styles";
+import { setColor, fadeIn } from "../../styles";
 
 export const HeaderContainer = styled.div`
 	background: ${setColor.primaryColor};

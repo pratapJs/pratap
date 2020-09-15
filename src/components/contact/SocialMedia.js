@@ -45,7 +45,7 @@ const SocialMedia = () => {
 export default SocialMedia;
 const SocialContainer = styled.div`
 	background-color: ${setColor.secondaryColor};
-	margin-top: 10rem;
+	margin-top: 6rem;
 	display: grid;
 	justify-content: center;
 
@@ -55,7 +55,7 @@ const SocialContainer = styled.div`
 		margin-bottom: 4rem;
 		justify-self: center;
 		margin-left: 6rem;
-		margin-top: 6rem;
+		margin-top: 4rem;
 		${media.mobileM`
 		margin-left: 3rem;
 			
@@ -67,7 +67,7 @@ const SocialContainer = styled.div`
 		margin-left: 10rem;
 		font-family: ${setFont.main};
 		font-size: 1.5rem;
-		margin: 3rem 8rem;
+		margin: 1rem 8rem;
 		${media.mobileM`
 		margin-left: 3rem; `}
 
