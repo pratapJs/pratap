@@ -78,8 +78,8 @@ const Button = styled.button`
 		background: ${setColor.redColor};
 
 		span {
-			padding-right: 0.5em;
-			transition: all 0.2s ease-in-out;
+			/* padding-right: 0.5em;
+			transition: all 0.2s ease-in-out; */
 			color: #fff;
 		}
 	}

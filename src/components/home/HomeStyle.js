@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { setColor, fadeIn, media } from "../../styles";
+import { setColor, fadeIn } from "../../styles";
 import { mainButton } from "../../globalStyles/globals/Buttons";
 
 export const HeaderContainer = styled.div`

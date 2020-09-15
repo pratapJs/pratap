@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Photo from "../../images/circlephoto.png";
-import { setFont, setColor, media } from "../../styles";
+import { setFont, setColor } from "../../styles";
 import Bar from "../../components/about/Bar";
+import Resume from "../../images/pratap_resume.pdf";
+import { Link } from "react-router-dom";
+
 const Profile = () => {
 	return (
 		<ProfileDiv>
@@ -17,17 +20,10 @@ const Profile = () => {
 					<br />I focus on creating intuitive, dynamic user experiences.
 				</p>
 
-				<Button>
-					<a
-						href="https://github.com/savip"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<span> My Resume </span>
-					</a>
+				<Button to={Resume} target="_blank">
+					<span> My Resume </span>{" "}
 				</Button>
 			</div>
-
 			<div className="bar">
 				<Bar />
 			</div>
@@ -61,24 +57,21 @@ const ProfileDiv = styled.section`
 		justify-self: center;
 	}
 `;
-const Button = styled.button`
+const Button = styled(Link)`
 	margin-left: 5rem;
 	padding: 0.3em;
 	text-align: center;
 	height: 5rem;
-	width: 15rem;
+	width: 16rem;
 	background: transparent;
 	margin-top: 2rem;
 	border: 2px solid ${setColor.redColor};
 	font-size: 2.2rem;
-
+	text-decoration: none;
+	display: block;
 	span {
 		color: ${setColor.greenColor};
 		font-family: ${setFont.slanted};
-	}
-
-	a:link {
-		text-decoration: none;
 	}
 
 	&:hover {
@@ -89,7 +82,7 @@ const Button = styled.button`
 		border-color: ${setColor.greenColor};
 
 		span {
-			/* 	padding-right: 0.5em;
+			/* padding-right: 1rem;
 			transition: all 0.2s ease-in-out; */
 			color: white;
 		}

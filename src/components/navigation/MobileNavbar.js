@@ -30,7 +30,7 @@ const MyMobileNavBar = styled.nav`
 	margin-top: 6.8rem;
 	width: 100%;
 	align-self: flex-end;
-	transition: transform 1s ease-in-out;
+	transition: transform 0.5s ease-in-out;
 
 	transform: translateX(
 		${(props) => (props.displayMobileNavBar ? "0" : "-100%")}

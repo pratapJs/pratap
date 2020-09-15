@@ -42,7 +42,7 @@ const MainNavigation = styled.nav`
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
-	position: sticky;
+	/* position: sticky; */
 	top: 0;
 	overflow-x: hidden;
 	z-index: 13;
