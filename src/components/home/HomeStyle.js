@@ -40,9 +40,9 @@ export const Button = styled.button`
 	text-align: center;
 
 	background: transparent;
-	color: ${(props) => (props.color ? props.color : "white")};
-	${setBorder({ width: "2px", style: "solid" })};
-	border-color: ${(props) => (props.color ? props.color : "white")};
+	color: white;
+	border: 2px solid white;
+
 	font-size: 2.5rem;
 	text-transform: capitalize;
 
@@ -56,7 +56,7 @@ export const Button = styled.button`
 	}
 	&:hover {
 		background-color: ${setColor.redColor};
-		padding-right: 0.5em;
-		transition: all 0.2s ease-in-out;
+		/* padding-right: 0.5em; */
+		/* transition: all 0.2s ease-in-out; */
 	}
 `;
