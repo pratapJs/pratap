@@ -13,7 +13,7 @@ const ContactForm = () => {
 	return (
 		<FormContainer>
 			<p> Have a question or want to work together?</p>
-			<form action="post" data-netlify="true">
+			<form action="POST" data-netlify="true">
 				<div>
 					<input
 						type="text"
