@@ -64,10 +64,9 @@ const SocialContainer = styled.div`
 	`}
 	}
 	p {
-		margin-left: 10rem;
 		font-family: ${setFont.main};
 		font-size: 1.5rem;
-		margin: 1rem 8rem;
+		margin: 1rem 9rem;
 		${media.mobileM`
 		margin-left: 3rem; `}
 

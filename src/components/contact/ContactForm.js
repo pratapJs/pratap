@@ -17,8 +17,8 @@ const ContactForm = () => {
 					<textarea
 						required
 						type="textarea"
-						cols="30"
-						rows="10"
+						cols="43"
+						rows="9"
 						placeholder="Your Message"
 						name="message"
 					/>

@@ -8,8 +8,6 @@ export const FormContainer = styled.div`
 	margin-top: 10rem;
 	justify-content: center;
 	textarea {
-		min-height: 20rem;
-		min-width: 40rem;
 		margin-top: 1rem;
 		margin-left: 0.5rem;
 		font-family: ${setFont.main};
