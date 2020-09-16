@@ -12,6 +12,8 @@ export const FormContainer = styled.div`
 		min-width: 40rem;
 		margin-top: 1rem;
 		margin-left: 0.5rem;
+		font-family: ${setFont.main};
+		font-size: 2rem;
 	}
 
 	input {
@@ -19,7 +21,8 @@ export const FormContainer = styled.div`
 		height: 4.5rem;
 		color: #000;
 		margin: 0.8rem;
-
+		font-family: ${setFont.main};
+		font-size: 1.5rem;
 		${media.mobileM`
 			width:30rem; 
 			
@@ -40,9 +43,9 @@ export const Button = styled.button`
 	text-align: center;
 
 	height: 5rem;
-	width: 25rem;
+	width: 22rem;
 	background: transparent;
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 	border: 2px solid white;
 	justify-self: center;
 	margin: 4rem 0;

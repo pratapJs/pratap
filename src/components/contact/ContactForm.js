@@ -7,17 +7,23 @@ const ContactForm = () => {
 			<form name="contact" action="/contact" method="post">
 				<input type="hidden" name="from-name" value="contact" />
 				<div>
-					<input required type="text" placeholder=" Name" />
+					<input required type="text" placeholder="Your Name" />
 				</div>
 				<div>
 					<input required type="email" placeholder="Enter email" />
 				</div>
 
 				<div>
-					<textarea required type="textarea" placeholder="Your Message" />
+					<textarea
+						required
+						type="textarea"
+						cols="30"
+						rows="10"
+						placeholder="Your Message"
+					/>
 				</div>
 			</form>
-			<Button type="button" className="submit">
+			<Button type="submit">
 				<span>Send Message </span>
 			</Button>
 		</FormContainer>
