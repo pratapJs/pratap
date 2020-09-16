@@ -17,8 +17,7 @@ const ProjectDesc = () => {
 				<p>
 					<FaAngleRight /> Take advantage of timely and affordable services
 					<br /> <FaAngleRight /> Projects varying from simple to advance
-					websites
-					<br /> <span> and apps on IOS and Android platforms.</span>
+					websites and apps on IOS and Android platforms.
 				</p>
 			</div>
 			<div>
