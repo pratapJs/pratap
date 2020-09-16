@@ -4,7 +4,7 @@ const ContactForm = () => {
 	return (
 		<FormContainer>
 			<p> Have a question or want to work together?</p>
-			<form name="contact" action="/contact" method="post">
+			<form name="contact" action="/contact" method="POST" data-netlify="true">
 				<input type="hidden" name="form-name" value="contact" />
 				<div>
 					<input required type="text" placeholder="Your Name" name="name" />
