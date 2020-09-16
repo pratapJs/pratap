@@ -94,10 +94,7 @@ ${media.tablet`
 
 p{
 	font-size:2rem;
-	${media.tablet`
-	font-size:1.7rem;
-	
-	`}
+
 }
 
 

@@ -2,6 +2,7 @@ import React from "react";
 import { FaAngleRight } from "react-icons/fa";
 import styled from "styled-components";
 import { setColor, setFont } from "../../styles";
+import Github from "../../images/GitHub-Mark-32px.png";
 
 const ProjectDesc = () => {
 	return (
@@ -26,7 +27,8 @@ const ProjectDesc = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<span> Check my projects </span>
+						<img src={Github} alt="githublogo" />
+						<span> More projects</span>
 					</a>
 				</Button>
 			</div>
@@ -56,18 +58,21 @@ const ProjectDescription = styled.div`
 `;
 const Button = styled.button`
 	margin: 5rem;
-	padding: 0.3em;
+	padding: 0.5rem;
 	text-align: center;
 	height: 5rem;
-	width: 20rem;
+	width: 22rem;
 	background: transparent;
-
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
 	border: 2px solid white;
-	font-size: 2em;
+	font-size: 2rem;
 
 	span {
 		color: #fff;
 		font-family: ${setFont.slanted};
+		font-size: 2.3rem;
 	}
 
 	a:link {

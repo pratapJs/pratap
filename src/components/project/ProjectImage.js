@@ -3,35 +3,96 @@ import styled from "styled-components";
 import { media } from "../../styles";
 import todoapp from "../../images/todoapp.png";
 import cocktails from "../../images/cocktails.png";
-import story1 from "../../images/story-1.jpeg";
-import story3 from "../../images/story-3.jpg";
-import story2 from "../../images/story-2.jpg";
-import story4 from "../../images/story-4.jpg";
+import beachresort from "../../images/resortwebsite.png";
+import speech from "../../images/speech recognition.png";
+import exchangerate from "../../images/exchange rate.png";
+import relaxer from "../../images/relaxer.png";
+
 const ProjectImage = () => {
 	return (
 		<ImageContainer>
-			<a
-				href="https://prataptodos.netlify.app/"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<img src={todoapp} alt="todo app" />
-			</a>
+			<div className="imagewrapper">
+				<p>
+					{" "}
+					demo hotel website <br />
+					&ndash; includes all the essential features
+				</p>
+				<a
+					href="https://resortwebsitedemo.netlify.app/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src={beachresort} alt="resort website app" />{" "}
+				</a>
+			</div>
+			<div className="imagewrapper">
+				<p>
+					{" "}
+					Cocktails Training demo website <br />
+					&ndash; can search for favourite cocktail drink <br />
+					and check the ingredients too
+				</p>
+				<a
+					href="https://cocktailsbypratap.netlify.app/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src={cocktails} alt="cocktail app" />{" "}
+				</a>{" "}
+			</div>
+			<div className="imagewrapper">
+				<p>
+					Speech recognition app <br /> &ndash; speak and guess the number
+					between 1 to 100
+				</p>
+				<a
+					href="https://speechrecognitionguess.netlify.app/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src={speech} alt="speech recognition app" />
+				</a>
+			</div>
+			<div className="imagewrapper">
+				<p>
+					Currency exchange rate <br />
+					&ndash; check the current currency exchange rate
+				</p>
+				<a
+					href="https://exchangeratecurrency.netlify.app/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src={exchangerate} alt="todo app" />
+				</a>
+			</div>
+			<div className="imagewrapper">
+				<p>
+					Relax your mind <br />
+					&ndash; watch the screen to relax your mind
+				</p>
+				<a
+					href="https://relaxermindapp.netlify.app/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src={relaxer} alt="relaxer app" />
+				</a>
+			</div>
 
-			<a
-				href="https://cocktailsbypratap.netlify.app/"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<img src={cocktails} alt="cocktail app" />{" "}
-			</a>
-
-			<img src={story1} alt="project1" />
-
-			<img src={story2} alt="project2" />
-
-			<img src={story3} alt="project3" />
-			<img src={story4} alt="project4" />
+			<div className="imagewrapper">
+				<p>
+					Todo app <br />
+					&ndash; add ,delete and update your todo jobs
+				</p>
+				<a
+					href="https://prataptodos.netlify.app/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src={todoapp} alt="todo app" />
+				</a>
+			</div>
 		</ImageContainer>
 	);
 };
@@ -44,20 +105,43 @@ const ImageContainer = styled.div`
 	margin-left: 2rem;
 	flex-direction: columns;
 	flex-wrap: wrap;
+
+	.imagewrapper {
+		display: flex;
+		position: relative;
+		align-items: center;
+
+		&:hover img {
+			opacity: 0.1;
+		}
+		&:hover p {
+			opacity: 1;
+		}
+
+		p {
+			position: absolute;
+			margin-left: 5rem;
+			opacity: 0;
+			text-transform: capitalize;
+		}
+	}
+
 	${media.tablet`
 justify-content:center;
-	
-	`}
+		`}
 
 	img {
 		width: 42rem;
 		height: 30rem;
 		margin: 2rem;
+		display: block;
+		transition: 0.5s ease;
+
+		opacity: 1;
 
 		${media.mobileM`
 width:30rem;
 height:20rem;
-	
-	`}
+		`}
 	}
 `;
