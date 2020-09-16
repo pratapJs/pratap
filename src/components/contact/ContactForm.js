@@ -5,7 +5,7 @@ const ContactForm = () => {
 		<FormContainer>
 			<p> Have a question or want to work together?</p>
 			<form name="contact" action="/contact" method="post">
-				<input type="hidden" name="from-name" value="contact" />
+				<input type="hidden" name="form-name" value="contact" />
 				<div>
 					<input required type="text" placeholder="Your Name" />
 				</div>
