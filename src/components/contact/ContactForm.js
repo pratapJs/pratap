@@ -25,10 +25,10 @@ const ContactForm = () => {
 						{" "}
 					</textarea>
 				</div>
+				<Button type="submit">
+					<span>Send Message </span>
+				</Button>
 			</form>
-			<Button type="submit">
-				<span>Send Message </span>
-			</Button>
 		</FormContainer>
 	);
 };
