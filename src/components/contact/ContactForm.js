@@ -7,10 +7,10 @@ const ContactForm = () => {
 			<form name="contact" action="/contact" method="post">
 				<input type="hidden" name="form-name" value="contact" />
 				<div>
-					<input required type="text" placeholder="Your Name" />
+					<input required type="text" placeholder="Your Name" name="name" />
 				</div>
 				<div>
-					<input required type="email" placeholder="Enter email" />
+					<input required type="email" placeholder="Enter email" name="email" />
 				</div>
 
 				<div>
@@ -20,6 +20,7 @@ const ContactForm = () => {
 						cols="30"
 						rows="10"
 						placeholder="Your Message"
+						name="message"
 					/>
 				</div>
 			</form>
