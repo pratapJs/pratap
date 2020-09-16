@@ -47,7 +47,7 @@ export const Button = styled.button`
 	border: 2px solid white;
 	justify-self: center;
 	margin-top: 2rem;
-	margin-left: 7rem;
+	margin-left: 8rem;
 	cursor: pointer;
 
 	span {

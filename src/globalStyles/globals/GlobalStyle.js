@@ -13,8 +13,8 @@ const GlobalStyle = createGlobalStyle`
 	box-sizing: inherit;
 }
 
-html {font-size: 62.5%;
-	
+html {
+	font-size: 62.5%;
 	box-sizing: border-box;
 
 	
@@ -22,7 +22,7 @@ html {font-size: 62.5%;
 
 body {
 	font-family: ${setFont.main};
-	
+  
 	font-weight: 200;
 	color:#fff;
 

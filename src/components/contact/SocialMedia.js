@@ -4,9 +4,17 @@ import facebook from "../../images/facebook.svg";
 import instagram from "../../images/instagram.svg";
 import twitter from "../../images/twitter.svg";
 import { setColor, setFont, media } from "../../styles";
+/* import { BsChevronDoubleUp } from "react-icons/bs";
+import { Link } from "react-router-dom"; */
 const SocialMedia = () => {
 	return (
 		<SocialContainer>
+			{/* 	<div className="homeIcon">
+				<Link to="/">
+					{" "}
+					<BsChevronDoubleUp size={60} />
+				</Link>{" "}
+			</div> */}
 			<div>
 				<a
 					href="https://www.facebook.com/adhi.pratap"
@@ -74,5 +82,9 @@ const SocialContainer = styled.div`
 		span {
 			color: ${setColor.redColor};
 		}
+	}
+
+	.homeIcon {
+		justify-self: center;
 	}
 `;

@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-// import MobileNavbar from "./MobileNavbar";
+import MobileNavbar from "./MobileNavbar";
 import DesktopNavbar from "./DesktopNavbar";
 import { media } from "../../styles";
 
 const Navbar = () => {
-	/* const [displayMobileNavBar, setDisplayMobileNavBar] = useState(false);
+	const [displayMobileNavBar, setDisplayMobileNavBar] = useState(false);
 
 	useEffect(() => {
 		const checkAndAutoHideMobileNavbar = () => {
@@ -23,15 +23,14 @@ const Navbar = () => {
 	const toggleMobileNavbar = () => {
 		setDisplayMobileNavBar((displayMobileNavBar) => !displayMobileNavBar);
 	};
- */
+
 	return (
 		<MainNavigation>
-			{/* <DesktopNavbar toggleMobileNavbar={toggleMobileNavbar} /> */}
-			{/* <MobileNavbar
+			<DesktopNavbar toggleMobileNavbar={toggleMobileNavbar} />
+			<MobileNavbar
 				displayMobileNavBar={displayMobileNavBar}
 				toggleMobileNavbar={toggleMobileNavbar}
-			/> */}
-			<DesktopNavbar />
+			/>
 		</MainNavigation>
 	);
 };
@@ -40,19 +39,19 @@ export default Navbar;
 
 const MainNavigation = styled.nav`
 	grid-column: full-start/full-end;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 5fr));
-	justify-content: space-around;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
 	position: sticky;
 	top: 0;
 	overflow-x: hidden;
 	z-index: 13;
 
-	/* ${media.tablet` 
+	${media.tablet` 
 position:static;
 	
 	
 	
 
-`} */
+`}
 `;

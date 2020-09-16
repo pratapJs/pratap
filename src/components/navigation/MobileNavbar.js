@@ -19,7 +19,6 @@ export default MobileNavbar;
 const MyMobileNavBar = styled.nav`
 	/* clip-path: polygon(100% 0%, 100% 0%, 0 100%, 0 0); */
 	background-color: ${setColor.primaryColor};
-	/* display:none; */
 
 	/* visibility: ${(props) => !props.displayMobileNavBar && "hidden"}; */
 	/* display: ${(props) => props.displayMobileNavBar && "block"}; */
@@ -32,7 +31,7 @@ const MyMobileNavBar = styled.nav`
 	transition: transform 0.5s ease-in-out;
 
 	transform: translateX(
-		${(props) => (props.displayMobileNavBar ? "0" : "-100%")}
+		${(props) => (props.displayMobileNavBar ? "0%" : "100%")}
 	);
 	.nav-links {
 		display: flex;
@@ -40,15 +39,13 @@ const MyMobileNavBar = styled.nav`
 		line-height: 4rem;
 		align-items: flex-start;
 		list-style: none;
-		font-size: 1.5rem;
 	}
 
 	.link {
 		color: white;
 		text-decoration: none;
-		margin-left: 2.5rem;
-
-		margin-top: 1.5rem;
+		margin-left: 2rem;
+		font-size: 2.2rem;
 		&:hover,
 		&:active,
 		&.active {
