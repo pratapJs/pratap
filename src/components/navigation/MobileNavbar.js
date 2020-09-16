@@ -43,6 +43,7 @@ const MyMobileNavBar = styled.nav`
 
 	.link {
 		color: white;
+		z-index: 13;
 		text-decoration: none;
 		margin-left: 2rem;
 		font-size: 2.2rem;
