@@ -22,7 +22,7 @@ const MyMobileNavBar = styled.nav`
 	/* display: none; */
 
 	/* visibility: ${(props) => !props.displayMobileNavBar && "hidden"}; */
-	display: ${(props) => props.displayMobileNavBar && "block"};
+	display: ${(props) => (props.displayMobileNavBar ? "block" : "none")};
 
 	overflow: hidden;
 	position: absolute;
