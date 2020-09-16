@@ -4,8 +4,6 @@ import styled from "styled-components";
 import { setColor } from "../../styles";
 
 const MobileNavbar = (props) => {
-	console.log(props);
-
 	return (
 		<MyMobileNavBar displayMobileNavBar={props.displayMobileNavBar}>
 			<NavLinks

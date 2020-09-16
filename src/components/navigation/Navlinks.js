@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Navlinks = (props) => {
-	console.log(props);
 	let tempTabIndex;
 	if (props.isMobileLink) {
 		tempTabIndex = "-1";
