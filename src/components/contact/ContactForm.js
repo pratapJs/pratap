@@ -4,7 +4,7 @@ const ContactForm = () => {
 	return (
 		<FormContainer>
 			<p> Have a question or want to work together?</p>
-			<form name="contact" method="POST">
+			<form name="contact" action="/contact" method="POST">
 				<input type="hidden" name="form-name" value="contact" />
 				<div>
 					<input required type="text" placeholder="Your Name" name="name" />
@@ -21,7 +21,9 @@ const ContactForm = () => {
 						rows="9"
 						placeholder="Your Message"
 						name="message"
-					/>
+					>
+						{" "}
+					</textarea>
 				</div>
 			</form>
 			<Button type="submit">
