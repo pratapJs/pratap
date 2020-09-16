@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Photo from "../../images/circlephoto.png";
 import { setFont, setColor } from "../../styles";
 import Bar from "../../components/about/Bar";
-import Resume from "../../images/pratap_resume.pdf";
+import Resume from "../../images/Sample_Resume.pdf";
 import { Link } from "react-router-dom";
 
 const Profile = () => {
@@ -51,6 +51,7 @@ const ProfileDiv = styled.section`
 
 	.profiledesc {
 		justify-self: center;
+		margin-left: 3rem;
 	}
 
 	.bar {
