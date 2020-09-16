@@ -17,7 +17,8 @@ const ProjectDesc = () => {
 				<p>
 					<FaAngleRight /> Take advantage of timely and affordable services
 					<br /> <FaAngleRight /> Projects varying from simple to advance
-					<br /> <span> websites and apps on IOS and Android platforms.</span>
+					websites
+					<br /> <span> and apps on IOS and Android platforms.</span>
 				</p>
 			</div>
 			<div>
@@ -52,7 +53,7 @@ const ProjectDescription = styled.div`
 	}
 	p {
 		span {
-			margin-left: 1em;
+			margin-left: 2rem;
 		}
 	}
 `;
