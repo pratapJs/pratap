@@ -14,6 +14,12 @@ export const FormContainer = styled.div`
 		font-size: 2rem;
 		height: 15rem;
 		width: 40rem;
+		${media.mobileM`
+			width:30rem; 
+			
+			
+	
+	`}
 	}
 
 	input {
