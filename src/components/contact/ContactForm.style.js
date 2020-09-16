@@ -12,6 +12,8 @@ export const FormContainer = styled.div`
 		margin-left: 0.5rem;
 		font-family: ${setFont.main};
 		font-size: 2rem;
+		height: 15rem;
+		width: 40rem;
 	}
 
 	input {
