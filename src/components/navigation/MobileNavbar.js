@@ -17,8 +17,6 @@ const MobileNavbar = (props) => {
 export default MobileNavbar;
 
 const MyMobileNavBar = styled.nav`
-	z-index: 99;
-
 	/* clip-path: polygon(100% 0%, 100% 0%, 0 100%, 0 0); */
 	background-color: ${setColor.primaryColor};
 	/* display: none; */
@@ -27,8 +25,8 @@ const MyMobileNavBar = styled.nav`
 	display: ${(props) => (props.displayMobileNavBar ? "block" : "none")};
 
 	overflow: hidden;
-
-	margin-top: 6.8rem;
+	/* 
+	margin-top: 6.8rem; */
 	width: 100%;
 	align-self: flex-end;
 	/* transition: transform 0.5s ease-in-out;
@@ -48,7 +46,7 @@ const MyMobileNavBar = styled.nav`
 
 	.link {
 		color: white;
-		z-index: 13;
+
 		text-decoration: none;
 		margin-left: 2rem;
 		font-size: 2.2rem;

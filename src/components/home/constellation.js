@@ -22,7 +22,7 @@ const constellation = () => {
 
 							density: {
 								enable: true,
-								value_area: 0,
+								value_area: 50,
 							},
 						},
 					},
