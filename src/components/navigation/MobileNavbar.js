@@ -19,7 +19,7 @@ export default MobileNavbar;
 const MyMobileNavBar = styled.nav`
 	/* clip-path: polygon(100% 0%, 100% 0%, 0 100%, 0 0); */
 	background-color: ${setColor.primaryColor};
-	display: none;
+	/* display: none; */
 
 	/* visibility: ${(props) => !props.displayMobileNavBar && "hidden"}; */
 	display: ${(props) => props.displayMobileNavBar && "block"};
