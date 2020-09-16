@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import NavLinks from "./Navlinks";
 import { setColor, media } from "../../styles";
-import { GoGrabber } from "react-icons/go";
+/* import { GoGrabber } from "react-icons/go"; */
 const DesktopNavbar = (props) => {
 	return (
 		<NavbarContainer>
-			<LinkButton onClick={props.toggleMobileNavbar}>
+			{/* <LinkButton onClick={props.toggleMobileNavbar}>
 				<GoGrabber size={70} />
-			</LinkButton>
+			</LinkButton> */}
 			<NavLinks />
 		</NavbarContainer>
 	);
@@ -21,7 +21,7 @@ const NavbarContainer = styled.nav`
 	display: flex;
 	border-bottom: 2px solid ${setColor.borderColor};
 	flex-flow: row nowrap;
-	justify-content: start;
+	justify-content: center;
 	position: relative;
 	height: 7em;
 	color: white;
@@ -33,13 +33,15 @@ const NavbarContainer = styled.nav`
 		align-items: center;
 		list-style: none;
 		width: 50rem;
-		${media.tablet` 
+		/* ${media.tablet` 
 	display:none;
-	`}
+
+	`} */
 	}
 
 	.link {
 		color: white;
+
 		text-decoration: none;
 		font-size: 2.5rem;
 		&:hover,
@@ -49,7 +51,7 @@ const NavbarContainer = styled.nav`
 		}
 	}
 `;
-
+/* 
 const LinkButton = styled.button`
 	background: transparent;
 	align-self: center;
@@ -59,5 +61,7 @@ const LinkButton = styled.button`
 
 	${media.tablet` 
 	display:block;
+
 	`}
 `;
+ */
