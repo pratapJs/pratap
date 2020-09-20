@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Photo from "../../images/circlephoto.png";
 import { setFont, setColor } from "../../styles";
 import Bar from "../../components/about/Bar";
-import Resume from "../../images/Sample_Resume.pdf";
+import Resume from "../../images/Pratap_Adhikari_Resume.PDF";
 import { Link } from "react-router-dom";
 
 const Profile = () => {
