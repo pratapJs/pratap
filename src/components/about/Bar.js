@@ -35,6 +35,11 @@ const Bar = () => {
 			level: 90,
 			color: "#0F929B",
 		},
+		{
+			name: "XSLT",
+			level: 90,
+			color: "#0F929B",
+		},
 	];
 	return (
 		<BarContainer>
