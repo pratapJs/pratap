@@ -11,7 +11,7 @@ const Header = () => {
 				<h1>
 					Hello, I'm <span>Pratap Adhikari. </span>
 					<br />
-					I'm a full-stack web developer.
+					I'm a front-end web developer.
 				</h1>
 
 				<Button>
