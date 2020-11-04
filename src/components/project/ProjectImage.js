@@ -7,6 +7,7 @@ import beachresort from "../../images/resortwebsite.png";
 import speech from "../../images/speech recognition.png";
 import exchangerate from "../../images/exchange rate.png";
 import relaxer from "../../images/relaxer.png";
+import feedbackapp from "../../images/feedbackapp.png"
 
 const ProjectImage = () => {
 	return (
@@ -77,6 +78,19 @@ const ProjectImage = () => {
 					rel="noopener noreferrer"
 				>
 					<img src={relaxer} alt="relaxer app" />
+				</a>
+			</div>
+			<div className="imagewrapper">
+				<p>
+					Business Feedback App <br />
+					&ndash; Email your feedback
+				</p>
+				<a
+					href="https://react-local-businesses.herokuapp.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src={feedbackapp} alt="feedback app" />
 				</a>
 			</div>
 
