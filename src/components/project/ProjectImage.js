@@ -7,11 +7,25 @@ import beachresort from "../../images/resortwebsite.png";
 import speech from "../../images/speech recognition.png";
 import exchangerate from "../../images/exchange rate.png";
 import relaxer from "../../images/relaxer.png";
-import feedbackapp from "../../images/feedbackapp.png"
+import feedbackapp from "../../images/feedbackapp.png";
+import githubuser from "../../images/githubuser.png"
 
 const ProjectImage = () => {
 	return (
 		<ImageContainer>
+			<div className="imagewrapper">
+				<p>
+					Search Github User <br />
+					&ndash; search github users, popular languages, followers
+				</p>
+				<a
+					href="https://searchgitubuser.netlify.app/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src={githubuser} alt="searchgithubuser app" />
+				</a>
+			</div>
 			<div className="imagewrapper">
 				<p>
 					{" "}
