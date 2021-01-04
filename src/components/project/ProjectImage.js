@@ -8,11 +8,25 @@ import speech from "../../images/speech recognition.png";
 import exchangerate from "../../images/exchange rate.png";
 import relaxer from "../../images/relaxer.png";
 import feedbackapp from "../../images/feedbackapp.png";
-import githubuser from "../../images/githubuser.png"
+import githubuser from "../../images/githubuser.png";
+import ecommerce from "../../images/eCommerce.png";
 
 const ProjectImage = () => {
 	return (
 		<ImageContainer>
+			<div className="imagewrapper">
+				<p>
+					Complete eCommerce Site <br />
+					&ndash; Complete eCommerce site using React, Redux, ExpressJs
+				</p>
+				<a
+					href="http://104.131.15.211/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src={ecommerce} alt="eCommerce app" />
+				</a>
+			</div>
 			<div className="imagewrapper">
 				<p>
 					Search Github User <br />
