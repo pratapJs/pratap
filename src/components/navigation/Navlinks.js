@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 const Navlinks = (props) => {
 	let tempTabIndex;
@@ -10,45 +9,44 @@ const Navlinks = (props) => {
 	return (
 		<ul className="nav-links">
 			<li>
-				<NavLink
-					exact
-					to="/"
+				<a
+					href="#home"
 					className="link"
 					tabIndex={tempTabIndex}
 					onClick={props.toggleMobileNavbar}
 				>
 					Home
-				</NavLink>
+				</a>
 			</li>{" "}
 			<li>
-				<NavLink
-					to="/about"
+				<a
+					href="#about"
 					className="link"
 					tabIndex={tempTabIndex}
 					onClick={props.toggleMobileNavbar}
 				>
 					About
-				</NavLink>
+				</a>
 			</li>
 			<li>
-				<NavLink
-					to="/projects"
+				<a
+					href="#projects"
 					className="link"
 					tabIndex={tempTabIndex}
 					onClick={props.toggleMobileNavbar}
 				>
 					Projects
-				</NavLink>
+				</a>
 			</li>
 			<li>
-				<NavLink
-					to="/contact"
+				<a
+					href="#contact"
 					className="link"
 					tabIndex={tempTabIndex}
 					onClick={props.toggleMobileNavbar}
 				>
 					Contact
-				</NavLink>
+				</a>
 			</li>
 		</ul>
 	);
