@@ -25,6 +25,7 @@ const AboutContainer = styled.div`
 
 	grid-gap: 5rem;
 	margin: 2rem;
+	margin-top: 5rem;
 	color: #333;
 	background-image: url(${repeatingBackground});
 	background-attachment: fixed;
