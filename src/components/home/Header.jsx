@@ -1,7 +1,7 @@
 import React from "react";
 
 import Constellation from "../home/constellation";
-import { HeaderContainer, Button } from "../home/HomeStyle.js";
+import { HeaderContainer, Button } from "../home/HomeStyle";
 
 const Header = ({ id, changeTab }) => {
 	return (
