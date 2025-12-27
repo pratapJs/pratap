@@ -7,6 +7,9 @@ import Navbar from "../src/components/navigation/Navbar";
 
 function App() {
 	const [activeTab, setActiveTab] = React.useState("home");
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [activeTab]);
 	return (
 		<div className="container">
 			<Navbar setActiveTab={setActiveTab} />
