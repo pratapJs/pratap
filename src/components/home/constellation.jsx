@@ -1,38 +1,74 @@
-import React from "react";
-import Particles from "react-particles-js";
+import { useEffect, useState, useMemo } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 import styled from "styled-components";
 
-const constellation = () => {
-	return (
-		<ConstellationStyle>
-			<Particles
-				params={{
-					particles: {
-						number: {
-							value: 100,
-						},
-						shape: {
-							type: "edge",
+const Constellation = () => {
+	const [init, setInit] = useState(false);
 
-							stroke: {
-								width: 1,
+	useEffect(() => {
+		initParticlesEngine(async (engine) => {
+			await loadSlim(engine);
+		}).then(() => {
+			setInit(true);
+		});
+	}, []);
 
-								color: "#FA1F79",
-							},
+	const particlesLoaded = (container) => {
+		// console.log(container);
+	};
 
-							density: {
-								enable: true,
-								value_area: 50,
-							},
-						},
+	const options = useMemo(
+		() => ({
+			particles: {
+				number: {
+					value: 100,
+				},
+				shape: {
+					type: "edge",
+					stroke: {
+						width: 1,
+						color: "#FA1F79",
 					},
-				}}
-			/>
-		</ConstellationStyle>
+				},
+				opacity: {
+					value: 1,
+				},
+				size: {
+					value: 3,
+				},
+				move: {
+					enable: true,
+					speed: 1,
+				},
+				links: {
+					enable: true,
+					color: "#FA1F79",
+					distance: 150,
+					opacity: 1,
+					width: 1,
+				},
+			},
+		}),
+		[]
 	);
+
+	if (init) {
+		return (
+			<ConstellationStyle>
+				<Particles
+					id="tsparticles"
+					particlesLoaded={particlesLoaded}
+					options={options}
+				/>
+			</ConstellationStyle>
+		);
+	}
+
+	return <ConstellationStyle></ConstellationStyle>;
 };
 
-export default constellation;
+export default Constellation;
 
 const ConstellationStyle = styled.div`
 	display: grid;
