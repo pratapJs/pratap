@@ -1,3 +1,4 @@
+import React from "react";
 import { createRoot } from "react-dom/client";
 import GlobalStyle from "../src/globalStyles/globals/GlobalStyle";
 import App from "./App";
