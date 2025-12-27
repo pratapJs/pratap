@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/pratap/static/js/main.06c7d0a2.js",
+    "static/media/Pratap_Adhikari_Resume.pdf": "/pratap/static/media/Pratap_Adhikari_Resume.1189264dff988f1749f6.pdf",
+    "static/media/jekamobile.png": "/pratap/static/media/jekamobile.1b5285297dc8cc2766ea.png",
+    "static/media/infoBackground.svg": "/pratap/static/media/infoBackground.2147936b536503dd5dbd7142c106db41.svg",
+    "static/media/eCommerce.png": "/pratap/static/media/eCommerce.f506886df76a6f1b958a.png",
+    "static/media/circlephoto.png": "/pratap/static/media/circlephoto.f27fc27dae8dbde64216.png",
+    "static/media/repeatingBackground.svg": "/pratap/static/media/repeatingBackground.0225281752f63f63e9c46505aa67d22d.svg",
+    "static/media/mobileIcon.svg": "/pratap/static/media/mobileIcon.fbf379352b2fdbcae3cafcbec127b633.svg",
+    "static/media/twitter.svg": "/pratap/static/media/twitter.6c7251a31c30e9cc87fe292b0bef6808.svg",
+    "static/media/instagram.svg": "/pratap/static/media/instagram.b785683aa1d46553e033501aa1a5a106.svg",
+    "static/media/websiteIcon.svg": "/pratap/static/media/websiteIcon.bc979c5a3fde851ce3de637b8de3ef8d.svg",
+    "index.html": "/pratap/index.html",
+    "static/media/facebook.svg": "/pratap/static/media/facebook.112ba23cd37d9421f0690f47413bc1b0.svg",
+    "main.06c7d0a2.js.map": "/pratap/static/js/main.06c7d0a2.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.06c7d0a2.js"
+  ]
+}
