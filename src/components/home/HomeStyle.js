@@ -8,7 +8,7 @@ export const HeaderContainer = styled.div`
 
 	display: grid;
 
-	grid-template-rows: 95vh;
+	grid-template-rows: calc(100vh - 7.5em);
 	grid-template-areas: "overlap";
 	grid-row-gap: 2rem;
 

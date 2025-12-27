@@ -21,6 +21,7 @@ const ProjectContainer = styled.div`
 	display: grid;
 	grid-column: full-start/full-end;
 	grid-gap: 5rem;
+	min-height: calc(100vh - 7.5em);
 	background-image: url(${infoBackground});
 
 	background-attachment: fixed;
