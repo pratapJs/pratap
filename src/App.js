@@ -6,13 +6,16 @@ import Contact from "../src/pages/Contact";
 import Navbar from "../src/components/navigation/Navbar";
 
 function App() {
+	const [activeTab, setActiveTab] = React.useState("home");
 	return (
 		<div className="container">
-			<Navbar />
-			<Header id="home" />
-			<About id="about" />
-			<Projects id="projects" />
-			<Contact id="contact" />
+			<Navbar setActiveTab={setActiveTab} />
+			{activeTab === "home" && (
+				<Header id="home" changeTab={() => setActiveTab("projects")} />
+			)}
+			{activeTab === "about" && <About id="about" />}
+			{activeTab === "projects" && <Projects id="projects" />}
+			{activeTab === "contact" && <Contact id="contact" />}
 		</div>
 	);
 }

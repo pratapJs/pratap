@@ -9,6 +9,7 @@ const MobileNavbar = (props) => {
 			<NavLinks
 				isMobileLink={true}
 				toggleMobileNavbar={props.toggleMobileNavbar}
+				setActiveTab={props.setActiveTab}
 			/>
 		</MyMobileNavBar>
 	);

@@ -13,7 +13,10 @@ const Navlinks = (props) => {
 					href="#home"
 					className="link"
 					tabIndex={tempTabIndex}
-					onClick={props.toggleMobileNavbar}
+					onClick={() => {
+						props.setActiveTab("home");
+						props.toggleMobileNavbar && props.toggleMobileNavbar();
+					}}
 				>
 					Home
 				</a>
@@ -23,7 +26,10 @@ const Navlinks = (props) => {
 					href="#about"
 					className="link"
 					tabIndex={tempTabIndex}
-					onClick={props.toggleMobileNavbar}
+					onClick={() => {
+						props.setActiveTab("about");
+						props.toggleMobileNavbar && props.toggleMobileNavbar();
+					}}
 				>
 					About
 				</a>
@@ -33,7 +39,10 @@ const Navlinks = (props) => {
 					href="#projects"
 					className="link"
 					tabIndex={tempTabIndex}
-					onClick={props.toggleMobileNavbar}
+					onClick={() => {
+						props.setActiveTab("projects");
+						props.toggleMobileNavbar && props.toggleMobileNavbar();
+					}}
 				>
 					Projects
 				</a>
@@ -43,7 +52,10 @@ const Navlinks = (props) => {
 					href="#contact"
 					className="link"
 					tabIndex={tempTabIndex}
-					onClick={props.toggleMobileNavbar}
+					onClick={() => {
+						props.setActiveTab("contact");
+						props.toggleMobileNavbar && props.toggleMobileNavbar();
+					}}
 				>
 					Contact
 				</a>

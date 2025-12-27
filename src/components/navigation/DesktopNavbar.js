@@ -9,7 +9,7 @@ const DesktopNavbar = (props) => {
 			<LinkButton onClick={props.toggleMobileNavbar}>
 				<GoGrabber size={70} />
 			</LinkButton>
-			<NavLinks />
+			<NavLinks setActiveTab={props.setActiveTab} />
 		</NavbarContainer>
 	);
 };

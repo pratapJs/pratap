@@ -16,7 +16,7 @@ const Profile = () => {
 
 				<p>
 					{" "}
-					I'm a Front-End Developer from Darwin, Australia.
+					I'm a Full-Stack Developer from Melbourne, Australia.
 					<br />I focus on creating intuitive, dynamic user experiences.
 				</p>
 

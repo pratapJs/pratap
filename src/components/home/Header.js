@@ -3,7 +3,7 @@ import React from "react";
 import Constellation from "../home/constellation";
 import { HeaderContainer, Button } from "../home/HomeStyle.js";
 
-const Header = ({ id }) => {
+const Header = ({ id, changeTab }) => {
 	return (
 		<HeaderContainer id={id}>
 			<Constellation />
@@ -11,10 +11,10 @@ const Header = ({ id }) => {
 				<h1>
 					Hello, I'm <span>Pratap Adhikari. </span>
 					<br />
-					I'm a front-end web developer.
+					I'm a full-stack developer.
 				</h1>
 
-				<Button as="a" href="#projects">
+				<Button onClick={changeTab}>
 					<span>View my work </span>{" "}
 				</Button>
 			</div>

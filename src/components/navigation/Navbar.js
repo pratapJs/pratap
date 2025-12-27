@@ -4,7 +4,7 @@ import MobileNavbar from "./MobileNavbar";
 import DesktopNavbar from "./DesktopNavbar";
 import { media } from "../../styles";
 
-const Navbar = () => {
+const Navbar = ({ setActiveTab }) => {
 	const [displayMobileNavBar, setDisplayMobileNavBar] = useState(false);
 
 	useEffect(() => {
@@ -26,10 +26,14 @@ const Navbar = () => {
 
 	return (
 		<MainNavigation>
-			<DesktopNavbar toggleMobileNavbar={toggleMobileNavbar} />
+			<DesktopNavbar
+				toggleMobileNavbar={toggleMobileNavbar}
+				setActiveTab={setActiveTab}
+			/>
 			<MobileNavbar
 				displayMobileNavBar={displayMobileNavBar}
 				toggleMobileNavbar={toggleMobileNavbar}
+				setActiveTab={setActiveTab}
 			/>
 		</MainNavigation>
 	);
