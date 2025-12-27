@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
     plugins: [react()],
-    base: '/pratap/', // Set base URL for GitHub Pages
+    base: '/', // Set base URL to root for Netlify/Vercel
     build: {
         outDir: 'build', // Maintain 'build' output matching CRA/gh-pages expectations
     },
