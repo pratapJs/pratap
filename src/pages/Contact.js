@@ -5,10 +5,10 @@ import { setColor } from "../styles";
 import styled from "styled-components";
 import SocialMedia from "../components/contact/SocialMedia";
 
-const Contact = () => {
+const Contact = ({ id }) => {
 	return (
 		<>
-			<ContactContainer>
+			<ContactContainer id={id}>
 				<HeaderContact />
 				<ContactForm />
 				<SocialMedia />

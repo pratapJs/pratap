@@ -1,4 +1,6 @@
 import { keyframes, css } from "styled-components";
+import { mainButton as Button } from "./globalStyles/globals/Buttons";
+export { Button };
 
 const sizes = {
 	mobileS: 320,

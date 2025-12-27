@@ -19,9 +19,7 @@ const ContactForm = () => {
 						type="textarea"
 						placeholder="Your Message"
 						name="message"
-					>
-						{" "}
-					</textarea>
+					/>
 				</div>
 				<Button type="submit">
 					<span>Send Message </span>

@@ -4,7 +4,7 @@ import Photo from "../../images/circlephoto.png";
 import { setFont, setColor } from "../../styles";
 import Bar from "../../components/about/Bar";
 import Resume from "../../images/Pratap_Adhikari_Resume.pdf";
-import { Link } from "react-router-dom";
+
 
 const Profile = () => {
 	return (
@@ -20,7 +20,7 @@ const Profile = () => {
 					<br />I focus on creating intuitive, dynamic user experiences.
 				</p>
 
-				<Button to={Resume} target="_blank">
+				<Button href={Resume} target="_blank">
 					<span> My Resume </span>{" "}
 				</Button>
 			</div>
@@ -58,7 +58,7 @@ const ProfileDiv = styled.section`
 		justify-self: center;
 	}
 `;
-const Button = styled(Link)`
+const Button = styled.a`
 	margin-left: 5rem;
 	padding: 0.3em;
 	text-align: center;

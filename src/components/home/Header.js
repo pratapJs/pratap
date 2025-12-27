@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import Constellation from "../home/constellation";
 import { HeaderContainer, Button } from "../home/HomeStyle.js";
 
-const Header = () => {
+const Header = ({ id }) => {
 	return (
-		<HeaderContainer>
+		<HeaderContainer id={id}>
 			<Constellation />
 			<div className="homeText">
 				<h1>
@@ -14,11 +14,8 @@ const Header = () => {
 					I'm a front-end web developer.
 				</h1>
 
-				<Button>
-					<Link to="/projects">
-						{" "}
-						<span>View my work </span>{" "}
-					</Link>{" "}
+				<Button as="a" href="#projects">
+					<span>View my work </span>{" "}
 				</Button>
 			</div>
 		</HeaderContainer>

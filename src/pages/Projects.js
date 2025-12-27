@@ -5,9 +5,9 @@ import ProjectHeader from "../components/project/ProjectHeader";
 import ProjectDesc from "../components/project/ProjectDesc";
 import ProjectImage from "../components/project/ProjectImage";
 
-const Projects = () => {
+const Projects = ({ id }) => {
 	return (
-		<ProjectContainer>
+		<ProjectContainer id={id}>
 			<ProjectHeader />
 			<ProjectDesc />
 			<ProjectImage />

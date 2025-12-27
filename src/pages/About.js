@@ -6,9 +6,9 @@ import Profile from "../components/about/Profile";
 import Header from "../components/about/Header";
 import Features from "../components/about/Features";
 
-const About = () => {
+const About = ({ id }) => {
 	return (
-		<AboutContainer>
+		<AboutContainer id={id}>
 			<Header />
 
 			<Profile />
