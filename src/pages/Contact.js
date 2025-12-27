@@ -24,7 +24,6 @@ const ContactContainer = styled.div`
 	/* grid-template-rows: 55vh; */
 	display: grid;
 	grid-column: full-start/full-end;
-	min-height: calc(100vh - 7.5em);
 
 	/* clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%); */
 `;

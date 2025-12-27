@@ -114,8 +114,6 @@ p{
     display: grid;
      /* grid-template-rows: 100vh min-content repeat(3, 100vh);  */
 	grid-template-columns: [full-start] 1fr [center-start] repeat(8,[col-start] minmax(min-content, 14rem) [col-end])[center-end] 1fr[full-end];
-    height: 100vh;
-    overflow-y: auto;
 }
 
 

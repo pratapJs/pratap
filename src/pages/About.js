@@ -24,7 +24,6 @@ const AboutContainer = styled.div`
 	grid-column: full-start/full-end;
 
 	grid-gap: 5rem;
-	min-height: calc(100vh - 7.5em);
 	margin: 2rem;
 	color: #333;
 	background-image: url(${repeatingBackground});
