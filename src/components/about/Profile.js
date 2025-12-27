@@ -57,6 +57,13 @@ const ProfileDiv = styled.section`
 	.bar {
 		justify-self: center;
 	}
+
+	.image {
+		width: 20rem;
+		height: 20rem;
+		border-radius: 50%;
+		margin-bottom: 2rem;
+	}
 `;
 const Button = styled.a`
 	margin-left: 5rem;

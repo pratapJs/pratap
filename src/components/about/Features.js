@@ -30,8 +30,8 @@ const FeatureStyled = styled.section`
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 
 	img {
-		width: 22em;
-		height: 22em;
+		width: 12rem;
+		height: 12rem;
 		margin-bottom: 2rem;
 	}
 
