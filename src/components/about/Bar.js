@@ -7,32 +7,32 @@ const Bar = () => {
 	const skillsData = [
 		{
 			name: "Javascript",
-			level: 70,
+			level: 90,
 			color: "#0F929B",
 		},
 		{
 			name: "Reactjs",
-			level: 80,
+			level: 95,
 			color: "#0F929B",
 		},
 		{
 			name: "ReactNative",
-			level: 50,
+			level: 85,
 			color: "#0F929B",
 		},
 		{
 			name: "Nodejs",
-			level: 40,
+			level: 85,
 			color: "#0F929B",
 		},
 		{
 			name: "CSS",
-			level: 80,
+			level: 95,
 			color: "#0F929B",
 		},
 		{
 			name: "HTML",
-			level: 90,
+			level: 95,
 			color: "#0F929B",
 		},
 		{
