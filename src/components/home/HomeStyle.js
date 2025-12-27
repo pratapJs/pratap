@@ -5,7 +5,6 @@ import { setColor, fadeIn } from "../../styles";
 export const HeaderContainer = styled.div`
 	background: ${setColor.primaryColor};
 	grid-column: full-start/full-end;
-	overflow: hidden;
 
 	display: grid;
 
